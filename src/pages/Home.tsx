@@ -73,11 +73,6 @@ const Home = () => {
             {/* Stats */}
             <div className="mt-16 flex items-center justify-center gap-8 sm:gap-16 animate-fade-in">
               <div className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold text-foreground">100+</div>
-                <div className="text-sm text-muted-foreground mt-1">Organizations</div>
-              </div>
-              <div className="w-px h-12 bg-border" />
-              <div className="text-center">
                 <div className="text-3xl sm:text-4xl font-bold text-foreground">Free</div>
                 <div className="text-sm text-muted-foreground mt-1">Always</div>
               </div>
