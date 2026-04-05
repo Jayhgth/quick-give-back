@@ -1,6 +1,5 @@
 import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
-import { AnimatedBackground } from "@/components/AnimatedBackground";
 import { Button } from "@/components/ui/button";
 import { Home } from "lucide-react";
 
@@ -12,10 +11,8 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen bg-background flex flex-col relative">
-      <AnimatedBackground />
-      
-      <div className="relative z-10 flex-1 flex items-center justify-center">
+    <div className="min-h-screen bg-background flex flex-col">
+      <div className="flex-1 flex items-center justify-center">
         <div className="text-center">
           <h1 className="mb-4 text-7xl font-bold text-foreground">404</h1>
           <p className="mb-8 text-xl text-muted-foreground">Oops! Page not found</p>

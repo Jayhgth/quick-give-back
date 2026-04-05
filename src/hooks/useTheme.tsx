@@ -5,9 +5,8 @@ type Theme = "light" | "dark";
 export function useTheme() {
   const [theme, setTheme] = useState<Theme>(() => {
     if (typeof window !== "undefined") {
-      const stored = localStorage.getItem("theme") as Theme;
-      if (stored) return stored;
-      return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      if (document.documentElement.classList.contains("dark")) return "dark";
+      return "light";
     }
     return "light";
   });

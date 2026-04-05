@@ -2,7 +2,23 @@
   "permissions": {
     "allow": [
       "WebSearch",
-      "WebFetch(domain:reactbits.dev)"
+      "WebFetch(domain:reactbits.dev)",
+      "Bash(npx tsc:*)",
+      "Bash(rm:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(curl -s \"https://reactbits.dev/backgrounds/dark-veil\")",
+      "Bash(curl -s \"https://api.github.com/search/code?q=dark-veil+repo:DavidHDev/react-bits&type=Code\")",
+      "Bash(python3 -c \"import sys,json; data=json.load\\(sys.stdin\\); [print\\(item.get\\('path',''\\), item.get\\('html_url',''\\)\\) for item in data.get\\('items',[]\\)]\")",
+      "Bash(curl -sL \"https://github.com/DavidHDev/react-bits/tree/main/src/components/backgrounds\")",
+      "Bash(curl -sL \"https://github.com/DavidHDev/react-bits\")",
+      "Bash(curl -sL \"https://api.github.com/repos/DavidHDev/react-bits/contents/src/components/backgrounds\")",
+      "Bash(python3 -c \"import sys,json; data=json.load\\(sys.stdin\\); [print\\(item['name']\\) for item in data]\")",
+      "Bash(curl -sL \"https://raw.githubusercontent.com/DavidHDev/react-bits/main/src/components/backgrounds/DarkVeil.jsx\")",
+      "Bash(curl -sL \"https://raw.githubusercontent.com/DavidHDev/react-bits/refs/heads/main/src/components/backgrounds/DarkVeil.tsx\")",
+      "Bash(curl -sL \"https://api.github.com/repos/DavidHDev/react-bits/git/trees/main?recursive=1\")",
+      "Bash(python3 -c \" import sys, json data = json.load\\(sys.stdin\\) if 'tree' in data: [print\\(item['path']\\) for item in data['tree'] if 'dark' in item['path'].lower\\(\\) or 'DarkVeil' in item['path'] or 'DarkV' in item['path'] or 'veil' in item['path'].lower\\(\\)] \")",
+      "Bash(npm install:*)"
     ]
   }
 }

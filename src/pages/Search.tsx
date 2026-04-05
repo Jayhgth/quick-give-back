@@ -1,6 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
 import { Header } from "@/components/Header";
-import { AnimatedBackground } from "@/components/AnimatedBackground";
 import { LocationInput } from "@/components/LocationInput";
 import { FilterBar } from "@/components/FilterBar";
 import { PlaceList } from "@/components/PlaceList";
@@ -47,8 +46,7 @@ const Search = () => {
   const isInitial = !location && !loadingState.isLoading && places.length === 0 && !error;
 
   return (
-    <div className="min-h-screen bg-background flex flex-col relative">
-      <AnimatedBackground />
+    <div className="min-h-screen bg-background flex flex-col">
       <Header />
       
       <main className="container py-8 flex-1 flex flex-col relative z-10">

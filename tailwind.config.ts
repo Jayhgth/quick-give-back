@@ -128,6 +128,14 @@ export default {
           "0%, 100%": { transform: "translate(0, 0)", opacity: "0.3" },
           "50%": { transform: "translate(15px, 25px)", opacity: "0.7" },
         },
+        "shimmer": {
+          "0%": { backgroundPosition: "-200% center" },
+          "100%": { backgroundPosition: "200% center" },
+        },
+        "scale-in": {
+          from: { opacity: "0", transform: "scale(0.95)" },
+          to: { opacity: "1", transform: "scale(1)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -140,6 +148,8 @@ export default {
         "float-particle-1": "float-particle-1 8s ease-in-out infinite",
         "float-particle-2": "float-particle-2 10s ease-in-out infinite",
         "float-particle-3": "float-particle-3 12s ease-in-out infinite",
+        "shimmer": "shimmer 3s ease-in-out infinite",
+        "scale-in": "scale-in 0.4s ease-out forwards",
       },
     },
   },
