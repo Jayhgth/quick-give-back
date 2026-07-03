@@ -1,3 +1,5 @@
+# LOW EFFORT PRODUCT, Lovable oneshot. 
+
 # VolunteerNow
 
 Find volunteer opportunities in your community — no sign-up required.
